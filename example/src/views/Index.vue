@@ -1,0 +1,28 @@
+<template lang="pug">
+  div.view-index
+    h2.app-title Index
+
+    ci-list
+      ci-list-body
+        ci-list-cell(title="Form Group" extend_icon="chevron_right"
+          @click="toUrl('form-group')")
+        ci-list-cell(title="Collection" extend_icon="chevron_right"
+          @click="toUrl('collection')")
+        ci-list-cell(title="List" extend_text="detail"
+          @click="toUrl('list')")
+        ci-list-cell(title="Media" extend_icon="chevron_right"
+          @click="toUrl('media')")
+</template>
+
+<script>
+export default {
+  name: 'view-index',
+
+  methods: {
+    toUrl(url) {
+      // console.log('toUrl', url)
+      this.$router.push(url)
+    }
+  }
+}
+</script>

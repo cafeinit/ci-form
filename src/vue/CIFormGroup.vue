@@ -4,6 +4,7 @@
       :style="{ width: titleWidth }") {{title}}
 
     div.ci-form-group__content
+      span.ci-form-group__text(v-if="text") {{text}}
       slot
 
     div.ci-form-group__extend(v-if="$slots.extend")
@@ -29,11 +30,12 @@ export default {
     titleWidth: {
       type: String,
       default: ''
-    }
-  },
+    },
 
-  created() {
-    console.log(this)
+    text: {
+      type: String,
+      default: ''
+    }
   }
 }
 </script>

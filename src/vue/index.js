@@ -5,9 +5,11 @@
  */
 
 import CIFormGroup from './CIFormGroup.vue'
+import CIText from './CIText.vue'
 
 const components = [
   CIFormGroup,
+  CIText,
 ]
 
 const CIForm = {
@@ -16,6 +18,7 @@ const CIForm = {
   plugin: plugin,
 
   CIFormGroup,
+  CIText,
 }
 
 if (window.Vue) {

@@ -1,0 +1,51 @@
+/**
+ * @fileoverview ci-form-group
+ * @author burning (www.cafeinit.com)
+ * @version 2017.07.26
+ */
+
+.ci-form-group {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 0 @MARGIN 0;
+}
+
+.ci-list {
+  .ci-form-group {
+    margin-bottom: 0;
+  }
+}
+
+.ci-form-group__title {
+  margin-right: @MARGIN;
+  font-weight: normal;
+}
+
+.ci-form-group__content {
+  flex: 1;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.ci-form-group__extend {
+  margin-left: @MARGIN;
+}
+
+// // .@{ns}number,
+// // .@{ns}text {
+//   input,
+//   select,
+//   textarea {
+//     appearance: none;
+//     width: 100%;
+//     padding: @input-padding;
+//     margin: 0;
+//     border: 1px solid @input-border-color;
+//     border-radius: 0;
+//     outline: 0;
+//
+//     line-height: inherit;
+//     background-color: transparent;
+//   }
+// // }

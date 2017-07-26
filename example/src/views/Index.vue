@@ -6,8 +6,8 @@
       ci-list-body
         ci-list-cell(title="Form Group" extend_icon="chevron_right"
           @click="toUrl('form-group')")
-        ci-list-cell(title="Collection" extend_icon="chevron_right"
-          @click="toUrl('collection')")
+        ci-list-cell(title="Select" extend_icon="chevron_right"
+          @click="toUrl('select')")
         ci-list-cell(title="List" extend_text="detail"
           @click="toUrl('list')")
         ci-list-cell(title="Media" extend_icon="chevron_right"

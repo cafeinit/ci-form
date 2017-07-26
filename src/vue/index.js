@@ -6,10 +6,12 @@
 
 import CIFormGroup from './CIFormGroup.vue'
 import CIText from './CIText.vue'
+import CISelect from './CISelect.vue'
 
 const components = [
   CIFormGroup,
   CIText,
+  CISelect,
 ]
 
 const CIForm = {
@@ -19,6 +21,7 @@ const CIForm = {
 
   CIFormGroup,
   CIText,
+  CISelect,
 }
 
 if (window.Vue) {

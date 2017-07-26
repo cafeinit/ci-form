@@ -1,13 +1,13 @@
 <template lang="pug">
-  div.ci-text
-    input(
-      :type="type"
-      :name="name"
-      :value="value"
-      :maxlength="maxlength"
-      :placeholder="placeholder"
-      @change="onChange"
-      @input="onInput")
+div.ci-text
+  input(
+    :type="type"
+    :name="name"
+    :value="value"
+    :maxlength="maxlength"
+    :placeholder="placeholder"
+    @change="onChange"
+    @input="onInput")
 </template>
 
 <script>
@@ -23,11 +23,6 @@ export default {
   props: {
     name: {
       type: String,
-      default: ''
-    },
-
-    value: {
-      type: [ String, Number ],
       default: ''
     },
 

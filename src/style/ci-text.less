@@ -6,17 +6,6 @@
 
 .ci-text {
   input {
-    appearance: none;
-    width: 100%;
-    padding: @BUTTON_PADDING / 4 @BUTTON_PADDING / 2;
-    margin: 0;
-    border: 1px solid @INPUT_BORDER_COLOR;
-    border-radius: 0;
-    outline: 0;
-
-    height: @BUTTON_HEIGHT;
-    line-height: inherit;
-    font-size: @BUTTON_FONT_SIZE;
-    background-color: transparent;
+    .ci-input(@PADDING / 4 @PADDING / 2, @BUTTON_HEIGHT, @BUTTON_FONT_SIZE)
   }
 }

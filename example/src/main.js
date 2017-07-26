@@ -34,6 +34,12 @@ const router = new VueRouter({
       name: 'FormGroup',
       path: '/form-group',
       component: resolve => require(['./views/FormGroup.vue'], resolve)
+    },
+
+    {
+      name: 'Select',
+      path: '/select',
+      component: resolve => require(['./views/Select.vue'], resolve)
     }
   ]
 })

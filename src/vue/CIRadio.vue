@@ -24,75 +24,16 @@ div.ci-radio(:class="inline ? 'ci-radio_inline' : ''")
  * @version 2017.07.27
  */
 
-export default {
-  name: 'ci-radio',
+import CIRadioBase from './CIRadioBase'
 
-  props: {
-    name: {
-      type: String,
-      default: ''
-    },
+const CIRadio = Object.assign({}, CIRadioBase, {
+  name: 'ci-radio'
+})
 
-    options: {
-      type: Array,
-      default() {
-        return []
-      }
-    },
-
-    value: {
-      type: [ String, Number ],
-      default: ''
-    },
-
-    inline: {
-      type: String,
-      default: ''
-    }
-  },
-
-  data() {
-    return {
-      myValue: this.value,
-    }
-  },
-
-  watch: {
-    value(val) {
-      this.myValue = val
-    },
-
-    myValue(val) {
-      console.log('myValue', val, this.options.indexOf(this.myValue))
-    }
-  },
-
-  computed: {
-    index() {
-      for (let i = 0; i < this.options.length; i ++) {
-        if (this.options[i].value == this.myValue) {
-          return i
-        }
-      }
-      return -1
-    }
-  },
-
-  methods: {
-    onChange(evt) {
-      console.log('change', evt.target.value)
-      this.$emit('change', this.myValue)
-      // this.$emit('input', this.myValue)
-    },
-
-    onClick(index) {
-      // this.myIndex = index
-      this.$emit('click', this.myValue)
-    },
-
-    onInput(evt) {
-      console.log('input', evt.target.value)
-    }
-  }
+CIRadio.props.inline = {
+  type: String,
+  default: ''
 }
+
+export default CIRadio
 </script>

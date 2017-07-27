@@ -14,6 +14,8 @@ div.view-select
 
       ci-list-cell
         ci-form-group(title="Value" title-width="5em" :text="country")
+
+  ci-radio-list(title="Country" v-model="country" :options="country_list")
 </template>
 
 <script>

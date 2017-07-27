@@ -15,7 +15,21 @@ div.view-select
 
       ci-list-cell
         ci-form-group(title="Value" title-width="5em" :text="countries")
-  //- ci-radio-list(title="Country" v-model="country" :options="country_list")
+
+  ci-checkbox-list(title="Country" v-model="countries" :options="country_list")
+
+  ci-list
+    ci-list-body
+      ci-list-cell
+        ci-form-group(title="Active" title-width="5em")
+          ci-checkbox(v-model="is_active"
+            :options="[ { title: 'Active', value: true } ]")
+
+      ci-list-cell
+        ci-form-group(title=" " title-width="5em" :text="is_active")
+
+  ci-checkbox-list(title="Active" v-model="is_active"
+    :options="[ { title: 'Active', value: true } ]")
 </template>
 
 <script>
@@ -31,7 +45,9 @@ export default {
         { value: 'FR', title: 'France' },
         { value: 'RU', title: 'Russia' },
         { value: 'JP', title: 'Japan', disabled: true },
-      ]
+      ],
+
+      is_active: false
     }
   }
 }

@@ -54,13 +54,24 @@ export default {
     ids() {
       let ids = []
 
-      this.myValue.forEach((item) => {
-        this.options.forEach((option, i) => {
-          if (option.value == item) {
-            ids.push(i)
-          }
+      // if (typeof this.myValue === 'boolean') {
+      //   this.myValue = [ this.myValue ]
+      // }
+
+      if (this.myValue instanceof Array) {
+        this.myValue.forEach((item) => {
+          this.options.forEach((option, i) => {
+            if (option.value == item) {
+              ids.push(i)
+            }
+          })
         })
-      })
+      }
+      else {
+        if (this.myValue) {
+          ids.push(0)
+        }
+      }
 
       return ids
     }
@@ -68,8 +79,13 @@ export default {
 
   methods: {
     onChange(evt) {
-      // console.log('onChange', evt.target.value)
-      this.$emit('input', this.myValue)
+      // console.log('onChange', this.myValue, evt.target.checked)
+      if (this.myValue.length > 1) {
+        this.$emit('input', this.myValue)
+      }
+      else {
+        this.$emit('input', evt.target.checked)
+      }
     },
 
     onClick(index) {

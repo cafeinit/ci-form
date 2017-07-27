@@ -11,6 +11,7 @@ import CIRadio from './CIRadio.vue'
 import CIRadioList from './CIRadioList.vue'
 import CISelect from './CISelect.vue'
 import CIText from './CIText.vue'
+import CITextarea from './CITextarea.vue'
 
 const components = [
   CIFormGroup,
@@ -20,6 +21,7 @@ const components = [
   CIRadioList,
   CISelect,
   CIText,
+  CITextarea,
 ]
 
 const CIForm = {
@@ -34,6 +36,7 @@ const CIForm = {
   CIRadioList,
   CISelect,
   CIText,
+  CITextarea
 }
 
 if (window.Vue) {

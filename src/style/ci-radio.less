@@ -4,6 +4,7 @@
  * @version 2017.07.27
  */
 
+.ci-checkbox__item,
 .ci-radio__item {
   display: block;
   position: relative;
@@ -17,6 +18,7 @@
     color: @COLOR_GRAY_LIGHT;
   }
 
+  input[type=checkbox],
   input[type=radio] {
     display: none;
     // appearance: none;
@@ -36,11 +38,12 @@
   }
 }
 
-
+.ci-checkbox_inline,
 .ci-radio_inline {
   display: flex;
   flex-wrap: wrap;  // nowrap | wrap | wrap-reverse;
 
+  .ci-checkbox__item,
   .ci-radio__item {
     flex: 1;
     margin-right: @MARGIN;

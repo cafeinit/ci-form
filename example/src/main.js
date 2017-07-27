@@ -37,6 +37,12 @@ const router = new VueRouter({
     },
 
     {
+      name: 'Checkbox',
+      path: '/checkbox',
+      component: resolve => require(['./views/Checkbox.vue'], resolve)
+    },
+
+    {
       name: 'Radio',
       path: '/radio',
       component: resolve => require(['./views/Radio.vue'], resolve)

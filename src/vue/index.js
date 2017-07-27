@@ -1,17 +1,19 @@
 /**
  * @fileoverview index
  * @author burning (www.cafeinit.com)
- * @version 2017.07.26
+ * @version 2017.07.27
  */
 
 import CIFormGroup from './CIFormGroup.vue'
-import CIText from './CIText.vue'
+import CIRadio from './CIRadio.vue'
 import CISelect from './CISelect.vue'
+import CIText from './CIText.vue'
 
 const components = [
   CIFormGroup,
-  CIText,
+  CIRadio,
   CISelect,
+  CIText,
 ]
 
 const CIForm = {
@@ -20,8 +22,9 @@ const CIForm = {
   plugin: plugin,
 
   CIFormGroup,
-  CIText,
+  CIRadio,
   CISelect,
+  CIText,
 }
 
 if (window.Vue) {

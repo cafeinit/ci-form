@@ -1,0 +1,48 @@
+/**
+ * @fileoverview ci-radio
+ * @author burning (www.cafeinit.com)
+ * @version 2017.07.27
+ */
+
+.ci-radio__item {
+  display: block;
+  position: relative;
+  padding-left: (24 + 8) * @REM;
+
+  &.ci-active {
+    color: @COLOR_PRIMARY;
+  }
+
+  &.ci-disabled {
+    color: @COLOR_GRAY_LIGHT;
+  }
+
+  input[type=radio] {
+    display: none;
+    // appearance: none;
+    // padding: 0;
+    // margin: 0;
+  }
+
+  i {
+    position: absolute;
+    left: 0;
+    top: 5 * @REM;
+  }
+
+  span {
+    display: block;
+    line-height: @BUTTON_HEIGHT;
+  }
+}
+
+
+.ci-radio_inline {
+  display: flex;
+  flex-wrap: wrap;  // nowrap | wrap | wrap-reverse;
+
+  .ci-radio__item {
+    flex: 1;
+    margin-right: @MARGIN;
+  }
+}

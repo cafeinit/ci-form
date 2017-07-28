@@ -43,6 +43,12 @@ const router = new VueRouter({
     },
 
     {
+      name: 'Number',
+      path: '/number',
+      component: resolve => require(['./views/Number.vue'], resolve)
+    },
+
+    {
       name: 'Radio',
       path: '/radio',
       component: resolve => require(['./views/Radio.vue'], resolve)

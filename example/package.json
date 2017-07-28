@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/iburning/ci-style-base#readme",
   "dependencies": {
-    "ci-button": "^1.1.0",
+    "ci-button": "^1.1.1",
     "ci-ui-base": "^1.1.1",
     "vue": "^2.4.1",
     "vue-router": "^2.7.0"

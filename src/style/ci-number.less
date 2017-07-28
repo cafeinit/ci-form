@@ -1,0 +1,26 @@
+/**
+ * @fileoverview ci-number
+ * @author burning (www.cafeinit.com)
+ * @version 2017.07.28
+ */
+
+.ci-number {
+  display: flex;
+
+  input {
+    .ci-input(@PADDING / 4 @PADDING / 2, @BUTTON_HEIGHT, @BUTTON_FONT_SIZE);
+    flex: 1;
+  }
+
+  .ci-button {
+    padding: 0;
+
+    i {
+      margin-top: 5 * @REM;
+    }
+  }
+
+  .ci-button:last-child {
+    margin-left: @MARGIN / 2;
+  }
+}

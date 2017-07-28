@@ -7,7 +7,9 @@
         //- ci-list-cell(title="Form Group" extend_icon="chevron_right"
         //-   @click="toUrl('form-group')")
         ci-list-cell(title="Checkbox" extend_icon="chevron_right"
-            @click="toUrl('checkbox')")
+          @click="toUrl('checkbox')")
+        ci-list-cell(title="Number" extend_icon="chevron_right"
+          @click="toUrl('number')")
         ci-list-cell(title="Radio" extend_icon="chevron_right"
           @click="toUrl('radio')")
         ci-list-cell(title="Select" extend_icon="chevron_right"

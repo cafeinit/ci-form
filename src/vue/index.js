@@ -7,6 +7,7 @@
 import CIFormGroup from './CIFormGroup.vue'
 import CICheckbox from './CICheckbox.vue'
 import CICheckboxList from './CICheckboxList.vue'
+import CINumber from './CINumber.vue'
 import CIRadio from './CIRadio.vue'
 import CIRadioList from './CIRadioList.vue'
 import CISelect from './CISelect.vue'
@@ -17,6 +18,7 @@ const components = [
   CIFormGroup,
   CICheckbox,
   CICheckboxList,
+  CINumber,
   CIRadio,
   CIRadioList,
   CISelect,
@@ -32,6 +34,7 @@ const CIForm = {
   CIFormGroup,
   CICheckbox,
   CICheckboxList,
+  CINumber,
   CIRadio,
   CIRadioList,
   CISelect,

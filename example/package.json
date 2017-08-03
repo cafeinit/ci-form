@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iburning/ci-style-base.git"
+    "url": "git+https://github.com/cafeinit/ci-form.git"
   },
   "keywords": [
     "CafeInit",
@@ -19,12 +19,12 @@
   "author": "burning",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/iburning/ci-style-base/issues"
+    "url": "https://github.com/cafeinit/ci-form/issues"
   },
-  "homepage": "https://github.com/iburning/ci-style-base#readme",
+  "homepage": "https://github.com/cafeinit/ci-form#readme",
   "dependencies": {
     "ci-button": "^1.1.1",
-    "ci-ui-base": "^1.1.1",
+    "ci-ui-base": "^1.2.0",
     "vue": "^2.4.1",
     "vue-router": "^2.7.0"
   },

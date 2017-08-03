@@ -42,10 +42,12 @@
 .ci-radio_inline {
   display: flex;
   flex-wrap: wrap;  // nowrap | wrap | wrap-reverse;
+  justify-content: flex-start;  // flex-start | flex-end | center | space-between | space-around;
 
   .ci-checkbox__item,
   .ci-radio__item {
     flex: 1;
+    // flex-basis: 25%;  // <length> | auto; /* default auto */
     margin-right: @MARGIN;
   }
 }

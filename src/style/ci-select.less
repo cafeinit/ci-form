@@ -1,17 +1,20 @@
 /**
  * @fileoverview ci-select
  * @author burning (www.cafeinit.com)
- * @version 2017.07.26
+ * @version 2017.08.22
  */
 
 .ci-select {
   position: relative;
 
   select {
-    .ci-input(0 @PADDING / 2, @BUTTON_HEIGHT, @BUTTON_FONT_SIZE)
+    .ci-input(0 @PADDING / 2, @BUTTON_HEIGHT, @BUTTON_FONT_SIZE);
+    z-index: 10;
+    position: relative;
   }
 
   i {
+    z-index: 1;
     position: absolute;
     top: @PADDING / 4;
     right: @PADDING / 4;

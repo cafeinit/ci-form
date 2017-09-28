@@ -1,0 +1,244 @@
+/**
+ * ci-form - CafeInit Form
+ * @version v1.0.1
+ * @license Apache-2.0
+ * @copyright 2017 CafeInit.
+ */
+/**
+ * @fileoverview main
+ * @author burning (www.cafeinit.com)
+ * @version 2017.07.28
+ */
+/**
+ * @fileoverview variables
+ * @author burning (www.cafeinit.com)
+ * @version 2017.06.28
+ */
+/**
+ * @fileoverview mixins
+ * @author burning (www.cafeinit.com)
+ * @version 2017.07.26
+ */
+/**
+ * @fileoverview ci-form-group
+ * @author burning (www.cafeinit.com)
+ * @version 2017.07.26
+ */
+.ci-form-group {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  padding: 0;
+  margin: 0 0 32rpx 0;
+}
+.ci-list .ci-form-group {
+  margin-bottom: 0;
+}
+.ci-form-group__title {
+  height: 72rpx;
+  margin-right: 32rpx;
+  line-height: 72rpx;
+  font-size: 28rpx;
+  font-weight: normal;
+}
+.ci-form-group__content {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+}
+.ci-form-group__text {
+  line-height: 72rpx;
+}
+.ci-form-group__extend {
+  margin-left: 32rpx;
+}
+/**
+ * @fileoverview ci-number
+ * @author burning (www.cafeinit.com)
+ * @version 2017.07.28
+ */
+.ci-number {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.ci-number input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  padding: 8rpx 16rpx;
+  margin: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  outline: 0;
+  height: 72rpx;
+  line-height: 1;
+  font-size: 28rpx;
+  background-color: transparent;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.ci-number .ci-button {
+  padding: 0;
+}
+.ci-number .ci-button i {
+  margin-top: 10rpx;
+}
+.ci-number .ci-button:last-child {
+  margin-left: 16rpx;
+}
+/**
+ * @fileoverview ci-radio
+ * @author burning (www.cafeinit.com)
+ * @version 2017.07.27
+ */
+.ci-checkbox__item,
+.ci-radio__item {
+  display: block;
+  position: relative;
+  padding-left: 64rpx;
+}
+.ci-checkbox__item.ci-active,
+.ci-radio__item.ci-active {
+  color: #ff3366;
+}
+.ci-checkbox__item.ci-disabled,
+.ci-radio__item.ci-disabled {
+  color: #aaa;
+}
+.ci-checkbox__item input[type=checkbox],
+.ci-radio__item input[type=checkbox],
+.ci-checkbox__item input[type=radio],
+.ci-radio__item input[type=radio] {
+  display: none;
+}
+.ci-checkbox__item i,
+.ci-radio__item i {
+  position: absolute;
+  left: 0;
+  top: 10rpx;
+}
+.ci-checkbox__item span,
+.ci-radio__item span {
+  display: block;
+  line-height: 72rpx;
+}
+.ci-checkbox_inline,
+.ci-radio_inline {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.ci-checkbox_inline .ci-checkbox__item,
+.ci-radio_inline .ci-checkbox__item,
+.ci-checkbox_inline .ci-radio__item,
+.ci-radio_inline .ci-radio__item {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 32rpx;
+}
+/**
+ * @fileoverview ci-select
+ * @author burning (www.cafeinit.com)
+ * @version 2017.08.22
+ */
+.ci-select {
+  position: relative;
+}
+.ci-select select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  padding: 0 16rpx;
+  margin: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  outline: 0;
+  height: 72rpx;
+  line-height: 1;
+  font-size: 28rpx;
+  background-color: transparent;
+  z-index: 10;
+  position: relative;
+}
+.ci-select i {
+  z-index: 1;
+  position: absolute;
+  top: 8rpx;
+  right: 8rpx;
+}
+/**
+ * @fileoverview ci-text
+ * @author burning (www.cafeinit.com)
+ * @version 2017.07.26
+ */
+.ci-text input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  padding: 8rpx 16rpx;
+  margin: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  outline: 0;
+  height: 72rpx;
+  line-height: 1;
+  font-size: 28rpx;
+  background-color: transparent;
+}
+/**
+ * @fileoverview ci-text
+ * @author burning (www.cafeinit.com)
+ * @version 2017.07.26
+ */
+.ci-textarea textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  padding: 8rpx 16rpx;
+  margin: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  outline: 0;
+  height: 144rpx;
+  line-height: 1;
+  font-size: 28rpx;
+  background-color: transparent;
+  height: auto;
+  line-height: 1.5;
+}
+.ci-textarea__count {
+  margin: 8rpx 0;
+  font-size: 24rpx;
+  text-align: right;
+  color: #999;
+}
+.ci-textarea__count i {
+  margin: 0 8rpx;
+}
+body {
+  background-color: #EFEFEF;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 28rpx;
+  color: rgba(0, 0, 0, 0.54);
+}
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.54);
+}

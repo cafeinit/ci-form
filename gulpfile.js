@@ -1,10 +1,8 @@
 /**
  * @fileoverview gulpfile
  * @author burning (www.cafeinit.com)
- * @version 2017.07.26
+ * @version 2017.07.28
  */
-
-'use strict'
 
 const gulp = require('gulp')
 const cleanCSS = require('gulp-clean-css')
@@ -26,17 +24,36 @@ const banner = [
 ].join('\n')
 
 // tasks
-gulp.task('default', ['build'])
+gulp.task('default', ['build', 'style:weapp'])
 
 gulp.task('build', () => {
   return gulp.src([
     './src/style/main.less'
   ])
     .pipe(less({
-      plugins: [ autoprefix ]
+      plugins: [ autoprefix ],
+      globalVars: {
+        REM: `0.02rem`,
+      }
     }))
     .pipe(cleanCSS({ compatibility: 'ie8' }))
     .pipe(header(banner, { pkg: pkg }))
     .pipe(rename('ci-form.css'))
+    .pipe(gulp.dest('./dist'))
+})
+
+gulp.task('style:weapp', () => {
+  return gulp.src([
+    './src/style/main.less'
+  ])
+    .pipe(less({
+      plugins: [ autoprefix ],
+      globalVars: {
+        REM: `2rpx`,
+      }
+    }))
+    // .pipe(cleanCSS({ compatibility: 'ie8' }))
+    .pipe(header(banner, { pkg: pkg }))
+    .pipe(rename('ci-form.wxss'))
     .pipe(gulp.dest('./dist'))
 })
